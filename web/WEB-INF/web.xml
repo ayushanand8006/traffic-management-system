@@ -1,0 +1,73 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- LoginServlet Configuration -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- AddRouteServlet Configuration -->
+    <servlet>
+        <servlet-name>AddRouteServlet</servlet-name>
+        <servlet-class>AddRouteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddRouteServlet</servlet-name>
+        <url-pattern>/AddRouteServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- AddPoliceServlet Configuration -->
+    <servlet>
+        <servlet-name>AddPoliceServlet</servlet-name>
+        <servlet-class>AddPoliceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPoliceServlet</servlet-name>
+        <url-pattern>/AddPoliceServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>AddViolationServlet</servlet-name>
+    <servlet-class>AddViolationServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AddViolationServlet</servlet-name>
+    <url-pattern>/AddViolationServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>RouteServlet</servlet-name>
+    <servlet-class>RouteServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RouteServlet</servlet-name>
+    <url-pattern>/RouteServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>DeleteRouteServlet</servlet-name>
+    <servlet-class>DeleteRouteServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteRouteServlet</servlet-name>
+    <url-pattern>/DeleteRouteServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>DeleteViolationServlet</servlet-name>
+    <servlet-class>DeleteViolationServlet</servlet-class> <!-- Update this package name accordingly -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DeleteViolationServlet</servlet-name>
+    <url-pattern>/DeleteViolationServlet</url-pattern>
+</servlet-mapping>
+
+
+    <!-- Other servlets can be added here in a similar manner -->
+    
+</web-app>

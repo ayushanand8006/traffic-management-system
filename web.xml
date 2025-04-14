@@ -1,0 +1,33 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.traffic.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TrafficDataServlet</servlet-name>
+        <servlet-class>com.traffic.TrafficDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TrafficDataServlet</servlet-name>
+        <url-pattern>/trafficData</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignalControlServlet</servlet-name>
+        <servlet-class>com.traffic.SignalControlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignalControlServlet</servlet-name>
+        <url-pattern>/signalControl</url-pattern>
+    </servlet-mapping>
+</web-app>
